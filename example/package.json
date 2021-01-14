@@ -7,10 +7,6 @@
     "start": "parcel index.html",
     "build": "parcel build index.html"
   },
-  "dependencies": {
-    "@stitches/react": "0.0.2",
-    "react-app-polyfill": "^1.0.0"
-  },
   "alias": {
     "react": "../node_modules/react",
     "react-dom": "../node_modules/react-dom/profiling",

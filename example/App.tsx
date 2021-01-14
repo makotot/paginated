@@ -1,4 +1,3 @@
-import 'react-app-polyfill/ie11';
 import * as React from 'react';
 import { Paginated } from '../src/index';
 import { styled } from './stiches.config';

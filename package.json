@@ -48,6 +48,7 @@
   ],
   "devDependencies": {
     "@size-limit/preset-small-lib": "^4.9.1",
+    "@stitches/react": "0.0.2",
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
     "@types/react": "^17.0.0",
