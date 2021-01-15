@@ -10,7 +10,7 @@ export const usePaginated: UsePaginated = ({
   siblingsSize = SIBLING_SIZE,
   boundarySize = BOUNDARY_SIZE,
 }) => {
-  const totalPageItems = [...Array(totalPage)].map((_, i) => i + 1);
+  const totalPageItems = [...Array(totalPage)].fill(1).map((_, i) => i + 1);
   const [pages, updatePages] = useState<number[]>([]);
   const displayPageItemsSize = siblingsSize * 2 + 1;
   const isReachedToFirst = useCallback(() => currentPage <= siblingsSize, [
