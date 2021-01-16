@@ -8,6 +8,10 @@
 npm i @makotot/paginated
 ```
 
+## Example
+
+- [With Chakra UI](https://codesandbox.io/s/chakra-ui-gtwix)
+
 ## Usage
 
 ### Render Props
