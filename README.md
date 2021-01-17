@@ -1,6 +1,20 @@
-# Paginated
+# Paginated ![CI](https://github.com/makotot/paginated/workflows/CI/badge.svg?branch=master)
 
-> Headless component & custom hook for pagination.
+![npm](https://img.shields.io/npm/v/@makotot/paginated?style=for-the-badge)
+![NPM](https://img.shields.io/npm/l/@makotot/paginated?style=for-the-badge)
+![npm bundle size](https://img.shields.io/bundlephobia/min/@makotot/paginated?style=for-the-badge)
+![npm bundle size](https://img.shields.io/bundlephobia/minzip/@makotot/paginated?style=for-the-badge)
+![GitHub contributors](https://img.shields.io/github/contributors/makotot/paginated?style=for-the-badge)
+
+> React render props & custom hook for pagination.
+
+## Features
+
+- **Headless component** -
+  There are no restrictions on the ui expression.
+- **Style free** - This lib only care about functionality of pagination.
+- **Tested with [RTL](https://github.com/testing-library/react-testing-library)**
+- **Small size** - https://bundlephobia.com/result?p=@makotot/paginated
 
 ## Install
 
