@@ -17,14 +17,16 @@
     "lint": "tsdx lint",
     "prepare": "tsdx build",
     "size": "size-limit",
-    "analyze": "size-limit --why"
+    "analyze": "size-limit --why",
+    "semantic-release": "semantic-release"
   },
   "peerDependencies": {
     "react": ">=16.8"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "tsdx lint"
+      "pre-commit": "tsdx lint",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "prettier": {
@@ -47,6 +49,11 @@
     }
   ],
   "devDependencies": {
+    "@commitlint/cli": "11.0.0",
+    "@commitlint/config-conventional": "11.0.0",
+    "@semantic-release/changelog": "5.0.1",
+    "@semantic-release/git": "9.0.0",
+    "@semantic-release/release-notes-generator": "9.0.1",
     "@size-limit/preset-small-lib": "4.9.1",
     "@stitches/react": "0.0.2",
     "@testing-library/jest-dom": "5.11.9",
@@ -56,6 +63,7 @@
     "husky": "4.3.8",
     "react": "17.0.1",
     "react-dom": "17.0.1",
+    "semantic-release": "17.3.7",
     "size-limit": "4.9.1",
     "tsdx": "0.14.1",
     "tslib": "2.1.0",
@@ -67,5 +75,27 @@
   ],
   "publishConfig": {
     "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/makotot/paginated.git"
+  },
+  "release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/changelog",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/npm",
+      "@semantic-release/github",
+      "@semantic-release/git"
+    ],
+    "branches": [
+      "master"
+    ]
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
   }
 }
