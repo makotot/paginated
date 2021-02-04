@@ -57,7 +57,7 @@
     "@size-limit/preset-small-lib": "4.9.2",
     "@stitches/react": "0.0.2",
     "@testing-library/jest-dom": "5.11.9",
-    "@testing-library/react": "11.2.3",
+    "@testing-library/react": "11.2.5",
     "@types/react": "17.0.1",
     "@types/react-dom": "17.0.0",
     "husky": "4.3.8",
