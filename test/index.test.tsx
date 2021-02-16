@@ -191,7 +191,7 @@ describe('Paginated', () => {
 
     describe('Current page: 1 / Total page: 10 / Sibling size: 3', () => {
       beforeEach(() => {
-        render(<App currentPage={3} totalPage={10} siblingSize={3} />);
+        render(<App currentPage={3} totalPage={10} siblingsSize={3} />);
       });
 
       it('renders current page as 3', async () => {

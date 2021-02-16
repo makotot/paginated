@@ -10,13 +10,13 @@ const Grid = styled('div', {
 export const App: React.FC<{
   currentPage: number;
   totalPage: number;
-  siblingSize?: number;
+  siblingsSize?: number;
   boundarySize?: number;
-}> = ({ currentPage, totalPage, siblingSize, boundarySize }) => (
+}> = ({ currentPage, totalPage, siblingsSize, boundarySize }) => (
   <Paginated
     currentPage={currentPage}
     totalPage={totalPage}
-    siblingsSize={siblingSize}
+    siblingsSize={siblingsSize}
     boundarySize={boundarySize}
   >
     {props => (
