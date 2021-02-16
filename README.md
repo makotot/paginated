@@ -66,7 +66,7 @@ import { usePaginated } from '@makotot/paginated'
 
 ...
 
-const { pages, currentPage, hasPrev, hasNext, getFirstBoundary, getLastBoundary, isPrevTruncated, isNextTruncated } = usePaginated({ currentPage: 1, totalPage: 10, siblingSize: 2, boundarySize: 2 });
+const { pages, currentPage, hasPrev, hasNext, getFirstBoundary, getLastBoundary, isPrevTruncated, isNextTruncated } = usePaginated({ currentPage: 1, totalPage: 10, siblingsSize: 2, boundarySize: 2 });
 
 return (
   <div>
@@ -101,7 +101,7 @@ Type: `number`
 
 The value of total page. Required.
 
-### `siblingSize`
+### `siblingsSize`
 
 Type: `number`
 
