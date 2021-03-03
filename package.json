@@ -63,7 +63,7 @@
     "husky": "4.3.8",
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "semantic-release": "17.4.0",
+    "semantic-release": "17.4.1",
     "size-limit": "4.9.2",
     "tsdx": "0.14.1",
     "tslib": "2.1.0",
