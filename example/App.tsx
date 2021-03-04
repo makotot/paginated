@@ -27,7 +27,7 @@ export const App: React.FC<{
         </div>
         <Grid>
           {props.hasPrev() && (
-            <a href="#" data-testid="hasPrev">
+            <a href="#prev" data-testid="hasPrev">
               prev
             </a>
           )}
@@ -55,7 +55,7 @@ export const App: React.FC<{
                   {page}
                 </span>
               ) : (
-                <a href="#" key={page} data-testid="pageItems">
+                <a href="#page" key={page} data-testid="pageItems">
                   {page}
                 </a>
               );
@@ -72,7 +72,7 @@ export const App: React.FC<{
             );
           })}
           {props.hasNext() && (
-            <a href="#" data-testid="hasNext">
+            <a href="#next" data-testid="hasNext">
               next
             </a>
           )}
