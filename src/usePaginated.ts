@@ -36,7 +36,14 @@ export const usePaginated: UsePaginated = ({
         currentPage + siblingsSize
       )
     );
-  }, [currentPage, siblingsSize, displayPageItemsSize]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [
+    isReachedToFirst,
+    isReachedToLast,
+    currentPage,
+    siblingsSize,
+    displayPageItemsSize,
+  ]);
 
   const hasPrev = useCallback(() => currentPage > 1, [currentPage]);
   const hasNext = useCallback(() => totalPage > currentPage, [
@@ -61,7 +68,13 @@ export const usePaginated: UsePaginated = ({
       .filter(p => !pages.includes(p));
 
     return boundary;
-  }, [pages]);
+  }, [
+    boundarySize,
+    isReachedToFirst,
+    pages,
+    prevAllPages.length,
+    totalPageItems,
+  ]);
 
   const getLastBoundary = useCallback(() => {
     if (isReachedToLast()) {
@@ -74,7 +87,13 @@ export const usePaginated: UsePaginated = ({
       .slice(totalPageItems.length - boundarySize, totalPageItems.length)
       .filter(p => !pages.includes(p));
     return boundary;
-  }, [pages]);
+  }, [
+    boundarySize,
+    isReachedToLast,
+    nextAllPages.length,
+    pages,
+    totalPageItems,
+  ]);
 
   const isPrevTruncated =
     prevAllPages.filter(
