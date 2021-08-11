@@ -55,7 +55,7 @@
     "@semantic-release/git": "9.0.0",
     "@semantic-release/release-notes-generator": "9.0.3",
     "@size-limit/preset-small-lib": "5.0.1",
-    "@stitches/react": "0.0.2",
+    "@stitches/react": "0.2.5",
     "@testing-library/jest-dom": "5.14.1",
     "@testing-library/react": "12.0.0",
     "@types/react": "17.0.15",
