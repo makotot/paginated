@@ -1,3 +1,7 @@
+# DEPRECATED - no longer actively maintained.
+
+Please use [GhostUI](https://github.com/makotot/GhostUI) instead.
+
 # Paginated ![CI](https://github.com/makotot/paginated/workflows/CI/badge.svg?branch=master)
 
 ![npm](https://img.shields.io/npm/v/@makotot/paginated?style=for-the-badge)
